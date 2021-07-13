@@ -6,7 +6,7 @@ const Statistics = ({ count }) => {
   return (
     <>
       <div>{count > 0 ? <p>{count}</p> : <p>Not clicked yet</p>}</div>
-      <p>{count % 2 == 0 ? "Even" : "Odd"}</p>
+      <p>{count % 2 === 0 ? "Even" : "Odd"}</p>
     </>
   );
 };
