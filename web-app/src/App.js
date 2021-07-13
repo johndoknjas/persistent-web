@@ -5,7 +5,8 @@ import Button from "@material-ui/core/Button";
 const Statistics = ({ count }) => {
   return (
     <>
-      <p>{count}</p>
+      <div>{count > 0 ? <p>{count}</p> : <p>Not clicked yet</p>}</div>
+      <p>{count % 2 == 0 ? "Even" : "Odd"}</p>
     </>
   );
 };
